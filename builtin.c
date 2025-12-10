@@ -36,6 +36,11 @@ int builtin_command(char **argv)
         date();
         return 1;
     }
+
+    else if(!strcmp(argv[0], "cat")){\
+        cat(argv);
+        return 1;
+    }
     
 
     // 백그라운드 작업일시에
