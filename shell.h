@@ -12,14 +12,11 @@
 #define MAXARGS 128
 
 void eval(char *cmdline);
-
-int parseline(char *buf, **argv);
-
-int builtin_cammand(char **argv);
+int parseline(char *buf, char  **argv);
+int builtin_command(char **argv);
 void do_cd(char **argv);
 
 // 추가적인 함수 ...?:
 
 extern char **environ;
 
-#endif
