@@ -15,17 +15,20 @@ int builtin_command(char **argv)
         return 1;
     }
 
+    // cd 명령어
     else if(!strcmp(argv[0], "cd")){
         cd(argv);
         return 1;
     }
 
+    // pwd 명령어
     else if(!strcmp(argv[0], "pwd")){
         pwd();
         return 1;
     } 
 
-    else if(!strcmp(argv[0], "exit")){
+    // exit 명령어
+    else if(!strcmp(argv[0], "exit") || !strcmp(argv[0], "logout")){
         exit(0);
     }
             
