@@ -16,6 +16,8 @@ int parseline(char *buf, char  **argv);
 int builtin_command(char **argv);
 void do_cd(char **argv);
 
+int ls();
+
 // 추가적인 함수 ...?:
 
 extern char **environ;
