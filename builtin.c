@@ -31,7 +31,11 @@ int builtin_command(char **argv)
     else if(!strcmp(argv[0], "exit") || !strcmp(argv[0], "logout")){
         exit(0);
     }
-            
+    
+    else if(!strcmp(argv[0], "date")){
+        date();
+        return 1;
+    }
     
 
     // 백그라운드 작업일시에

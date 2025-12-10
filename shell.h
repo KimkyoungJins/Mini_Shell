@@ -7,6 +7,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <limits.h>
+#include <time.h>
 
 #define MAXLINE 1024
 #define MAXARGS 128
@@ -18,6 +19,8 @@ void do_cd(char **argv);
 int ls();
 int cd(char **argv);
 int pwd();
+int date();
+
 
 // 추가적인 함수 ...?:
 
