@@ -14,6 +14,17 @@ int builtin_command(char **argv)
         ls();
         return 1;
     }
+
+    else if(!strcmp(argv[0], "cd")){
+        cd(argv);
+        return 1;
+    }
+
+    else if(!strcmp(argv[0], "pwd")){
+        pwd();
+        return 1;
+    }
+            
     
 
     // 백그라운드 작업일시에

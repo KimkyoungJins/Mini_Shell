@@ -15,8 +15,9 @@ void eval(char *cmdline);
 int parseline(char *buf, char  **argv);
 int builtin_command(char **argv);
 void do_cd(char **argv);
-
 int ls();
+int cd(char **argv);
+int pwd();
 
 // 추가적인 함수 ...?:
 
