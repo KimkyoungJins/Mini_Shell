@@ -23,6 +23,10 @@ int builtin_command(char **argv)
     else if(!strcmp(argv[0], "pwd")){
         pwd();
         return 1;
+    } 
+
+    else if(!strcmp(argv[0], "exit")){
+        exit(0);
     }
             
     
