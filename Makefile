@@ -2,7 +2,7 @@
 TARGET = myshell
 
 # 소스 파일 목록
-SRCS = main.c eval.c builtin.c parseline.c ls.c cd.c pwd.c date.c cat.c cp.c rm.c rmdir.c
+SRCS = main.c eval.c builtin.c parseline.c ls.c cd.c pwd.c date.c cat.c cp.c rm.c rmdir.c mv.c
 
 # 객체 파일 목록 (소스 파일에서 .c만 .o로 변경)
 OBJS = $(SRCS:.c=.o)

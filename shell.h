@@ -25,7 +25,7 @@ int cat(char **argv);
 int cp_command(char **argv);
 int rm_command(char **argv);
 int rmdir_command(char **argv);
-
+int mv_command(char **argv);
 
 // 추가적인 함수 ...?:
 
