@@ -49,6 +49,10 @@ int builtin_command(char **argv)
     else if(!strcmp(argv[0], "rm")){
         return rm_command(argv);
     }
+
+    else if(!strcmp(argv[0], "rmdir")){
+        return rmdir_command(argv);
+    }
     
 
     // 백그라운드 작업일시에
