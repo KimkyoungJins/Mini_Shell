@@ -9,6 +9,7 @@
 #include <limits.h>
 #include <time.h>
 #include <fcntl.h>          // 시스템 콜을 위한
+#include <signal.h>
 
 #define MAXLINE 1024
 #define MAXARGS 128
@@ -21,6 +22,7 @@ int cd(char **argv);
 int pwd();
 int date();
 int cat(char **argv);
+int cp_command(char **argv);
 
 
 // 추가적인 함수 ...?:

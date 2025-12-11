@@ -1,10 +1,20 @@
 #include "shell.h"
 
 
+
+void sig(int sig_no){
+    (void)sig_no;
+    write(STDOUT_FILENO, "\n", 1);
+}
+
+
 // 메인함수
 int main()
 {
     char cmdline[MAXLINE];
+
+    signal(SIGINT, sig);  // 시그널 처리 등록하기 
+    signal(SIGTSTP, sig);
 
     while (1) {
         

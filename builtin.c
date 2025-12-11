@@ -37,9 +37,13 @@ int builtin_command(char **argv)
         return 1;
     }
 
-    else if(!strcmp(argv[0], "cat")){\
+    else if(!strcmp(argv[0], "cat")){
         cat(argv);
         return 1;
+    }
+
+    else if(!strcmp(argv[0], "cp")){ 
+        return cp_command(argv);
     }
     
 
