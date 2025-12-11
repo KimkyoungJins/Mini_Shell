@@ -57,6 +57,10 @@ int builtin_command(char **argv)
     else if(!strcmp(argv[0], "mv")){
         return mv_command(argv);
     }
+
+    else if(!strcmp(argv[0], "mkdir")){
+        return mkdir_command(argv);
+    }
     
 
     // 백그라운드 작업일시에
