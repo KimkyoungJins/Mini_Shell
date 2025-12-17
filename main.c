@@ -1,7 +1,5 @@
 #include "shell.h"
 
-
-
 void sig(int sig_no){
     (void)sig_no;
     write(STDOUT_FILENO, "\n", 1);
